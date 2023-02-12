@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viachaslau Viahera Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/04d39b4ed7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="https://www.dropbox.com/s/cg5irowmte5pycj/logo.png?raw=1" class="logo">
+            <ul id="side_menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="open_menu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>DevOps Engineer</p>
+            <h1>Hi, I'm <span>Viachaslau</span><br>Viahera From Belarus!</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://www.dropbox.com/s/qaueophoig94rdy/user.jpg?raw=1">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Professional DevOps engineer with experience working on enterprise-grade projects.<br>
+                    Passionate about using latest technologies and applying best practices in my work.<br>
+                    Experienced in deploying, maintaining, and supporting complex Kubernetes clusters 
+                    in high-availability environments, on-prem, and in AWS/Azure.<br>Proficient in English.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                    <p class="tab-links" onclick="opentab('edu')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Orchestration</span><br>Kubernetes</li>
+                        <li><span>Containerization</span><br>Docker</li>
+                        <li><span>Continuous Delivery</span><br>Jenkins, Gitlab, Github Actions, ArgoCD, Azure DevOps</li>
+                        <li><span>Version Control System</span><br>Git</li>
+                        <li><span>Team collaboration software</span><br>Atlassian Jira</li>
+                        <li><span>Application Servers</span><br>NGINX, Apache Tomcat</li>
+                        <li><span>Programming Languages</span><br>Windows/Unix shell scripting, Python, HTML/CSS</li>
+                        <li><span>Automation</span><br>Ansible</li>
+                        <li><span>IaC tools</span><br>Terraform, Terragrunt</li>
+                        <li><span>Monitoring</span><br>Prometheus, Grafana, CloudWatch, Loki</li>
+                        <li><span>Cloud Providers</span><br>AWS, Azure</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exp">
+                    <ul>
+                        <li><span>06/2022 - Present time</span><br>EffectiveSoft, DevOps Engineer, Minsk</li>
+                        <li><span>01/2022 - 03/2022 </span><br>ITechArt Group, Intern DevOps Engineer, Minsk</li>
+                        <li><span>10/2019 - 05/2022</span><br>JLLC `COSMOS TV`, System Administrator/Tech support, Minsk</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="edu">
+                    <ul>
+                        <li><span>2016 - 2020</span><br>Belarusian State University of Informatics and Radioelectronics,
+                            <br>Bachelor of Science in Information Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------services----------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud engineering</h2>
+                <p> I help businesses to set up and configure large-scale cloud infrastructure. 
+                    Doing so I follow best practices for resources usage, networking, and access management.
+                <br>If you need someone to help you with managing your public cloud - I'm the guy!
+                </p>
+                <!-- <a href="#">Learn more..</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-infinity"></i>
+                <h2>CI/CD management</h2>
+                <p> Creation of Continuous Integration, Continuous Delivery and Deployment pipelines. 
+                    Managing and adjusting existing pipelines. 
+                    Practical real-world experience with most of the popular CI/CD solutions.<br>
+                    I'm not only reading .yaml, I'm SPEAKING .yaml ! 
+                </p>
+                <!-- <a href="#">Learn more..</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>IaC and Automation</h2>
+                <p> Big fan of IaC, especially for managing cloud infrastructure. 
+                    Hand-on experience in Terraform/Terragrunt, Ansible.
+                    State management, CI/CD for IaC, modularized code.<br>
+                    I don't tremble when I hear 'CloudFormation' :) 
+                </p>
+                <!-- <a href="#">Learn more..</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------portfolio--------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="proj-list">
+            <div class="proj">
+                <img src="https://www.dropbox.com/s/ikj77vpri73bwon/proj-1.png?raw=1">
+                <div class="layer">
+                    <h3>ChangeBlock Marketplace</h3>
+                    <p>A promising environmental DeFi (FinTech) project based on blockchain. <br>
+                        - Managing and populating dev, staging and prod environments based on AWS EKS.<br>
+                        - Set up private RDS PostgreSQL databases for the cluster.<br>
+                        - Dockerized applications to deploy in K8S cluster.<br>
+                        - Set up Github Actions CI/CD pipelines for automated building, testing and deploying to k8s.<br>
+                        - Configured logging and monitoring (Prometheus, CloudWatch, Grafana, Loki).<br>
+                        - Configured DNS and HTTPS (Route53, LetsEncrypt).<br>
+                        - Followed best Security practices managing permissions and sensitive data.<br>
+                        - Created custom Terraform modules for the EKS cluster and underlying infrastructure.<br></p>
+                    <a href="https://www.changeblock.com/"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="proj">
+                <img src="https://www.dropbox.com/s/4b7933v05vutonr/proj-2.png?raw=1">
+                <div class="layer">
+                    <h3>Clineco</h3>
+                    <p>A web-based platform and community that connects all the stakeholders of decentralized, hybrid and conventional clinical trials.<br>
+                        - Modified monitoring and logging system with Prometheus and Loki stack. <br>
+                        - Set up the Alerting with Grafana SMTP server and Prometheus metrics. <br>
+                        - Deployed new staging environment based on EKS. <br>
+                        - In my work I am following the GitOps methodology and save all infra data in code in github repo. <br>
+                        - CI/CD based on ArgoCD and Github Actions.
+                    </p>
+                    <a href="https://clineco.io/"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="proj">
+                <img src="https://www.dropbox.com/s/rxiptzo9rutc5fb/proj-3.png?raw=1">
+                <div class="layer">
+                    <h3>My Personal GitHub</h3>
+                    <p>My learning path and repositories with samples for projects.</p>
+                    <a href="https://github.com/vvvegero97?tab=repositories"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#portfolio" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------concact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>vvvegero97@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+375333244643</p>
+                <div class="social-icons">
+                    <a href="https://t.me/vvvegero97"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/viachaslau-viahera/?locale=en_US"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fmarsikmarsik123%3Figshid%3DZDdkNTZiNTM%3D&cc_key="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://join.skype.com/invite/I2hf8uh9W6FB"><i class="fa-brands fa-skype"></i></a>
+                </div>
+                <a href="https://www.dropbox.com/s/dhk1b7cguty1egd/CV_vvvegero97.pdf?dl=1" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                <span id="errmsg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Viachaslau Viahera. Made with 
+            magic 
+            of the Internet by myself. <i class="fa-solid fa-face-grin-wide"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("side_menu");
+    function open_menu(){
+        sidemenu.style.right = "0"
+    }
+    function close_menu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyyl_DgNEAq6cS2UKO92tpixlYHUcmhSI7gC6j7yncvtrH16KKg3-ii4RVDMMetoWgsYg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => {
+            errmsg.innerHTML = "Oops, something went wrong! :("
+            setTimeout(function(){
+                errmsg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+    })
+</script>
+    </body>
+</html>
