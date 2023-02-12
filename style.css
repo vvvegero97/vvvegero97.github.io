@@ -373,6 +373,13 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+    .layer{
+        padding: 0 15px;
+        font-size: 11px;
+    }
+    .services-list div{
+        padding:  15px;
+    }
 }
 #msg{
     color: #20960b;
