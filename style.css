@@ -65,6 +65,10 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #112756;
 }
+.cka-badge img{
+    margin-top: 200px;
+    width: 10%;
+}
 /* ------------about------------ */
 #about{
     padding: 80px 0;
@@ -325,6 +329,10 @@ nav .fa-solid{
     }
     .header-text h1 span{
         color: #193d6e;
+    }
+    .cka-badge img{
+        margin-top: 60px;
+        width: 20%;
     }
     nav .fa-solid{
         display: block;
