@@ -206,7 +206,7 @@ nav ul li a:hover::after{
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     transition: height 0.5s;
 }
